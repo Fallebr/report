@@ -1,6 +1,6 @@
 # report
 
-A new Flutter project.
+FLUTTER PROJECT FOR KOPI LETEK COMPANY, MALANG< EAST JAVA, INDONESIA
 
 ## Getting Started
 

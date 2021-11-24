@@ -21,14 +21,19 @@ class HomeState extends State<Home> {
     if (itemList == null) itemList = List<Item>();
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xffF18265),
         title: Text(
-          'Daftar Item',
+          'Report Today!',
           style: TextStyle(color: Colors.white),
+        ),
+        leading: BackButton(
+          color: Colors.white,
+          onPressed: () => Navigator.of(context).pop(),
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.amber,
-        child: Text('+'),
+        backgroundColor: Color(0xffF18265),
+        child: Text('+', style: TextStyle(color: Colors.white)),
         onPressed: () async {
           var item = await navigateToEntryForm(context, null);
           if (item != null) {

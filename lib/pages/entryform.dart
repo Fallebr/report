@@ -26,9 +26,10 @@ class EntryFormState extends State<EntryForm> {
     //rubah
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Color(0xffF18265),
           title: item == null
-              ? Text('Tambah', style: TextStyle(color: Colors.white))
-              : Text('Ubah', style: TextStyle(color: Colors.white)),
+              ? Text('Data Pemasukan', style: TextStyle(color: Colors.white))
+              : Text('Ubah Data', style: TextStyle(color: Colors.white)),
           leading: BackButton(
             color: Colors.white,
             onPressed: () => Navigator.of(context).pop(),
@@ -62,7 +63,7 @@ class EntryFormState extends State<EntryForm> {
                   controller: pemasukanController,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
-                    labelText: 'PEMASUKAN',
+                    labelText: 'Pemasukan',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
                     ),
@@ -79,7 +80,7 @@ class EntryFormState extends State<EntryForm> {
                   controller: pengeluaranController,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
-                    labelText: 'PENGELUARAN',
+                    labelText: 'Pengeluaran',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
                     ),
@@ -97,10 +98,10 @@ class EntryFormState extends State<EntryForm> {
                     // tombol simpan
                     Expanded(
                       child: RaisedButton(
-                        color: Theme.of(context).primaryColorDark,
-                        textColor: Theme.of(context).primaryColorLight,
+                        color: Color(0xffF18265),
+                        textColor: Colors.white,
                         child: Text(
-                          'Save',
+                          'Simpan',
                           textScaleFactor: 1.5,
                         ),
                         onPressed: () {
@@ -137,10 +138,10 @@ class EntryFormState extends State<EntryForm> {
                     // tombol batal
                     Expanded(
                       child: RaisedButton(
-                        color: Theme.of(context).primaryColorDark,
-                        textColor: Theme.of(context).primaryColorLight,
+                        color: Color(0xffF18265),
+                        textColor: Colors.white,
                         child: Text(
-                          'Cancel',
+                          'Batal',
                           textScaleFactor: 1.5,
                         ),
                         onPressed: () {
